@@ -35,6 +35,7 @@ def hoarePartition(arr, p, r):
             i += 1
         
         if i < j:
+            print(f"({i}, {j})")
             arr[i], arr[j] = arr[j], arr[i]
         else:
             return j
@@ -59,7 +60,9 @@ def testQuickSort():
 
 # The main body
 def main():
-    testQuickSort()
+    # testQuickSort()
+    a = [45, 7, 26, 15, 10, 30, 37, 5, 31, 17]
+    quickSort(a, 0, 9)
 
 if __name__ == '__main__':
     main()
